@@ -16,12 +16,18 @@ k = 0;
 f_0 = f(x_0);
 Dr = delta + 1;
  
-while (k <= k_max) && (abs(f_0) > epsilon) && (Dr > delta)
+while ((k <= k_max) && ((abs(f_0) > epsilon) || (Dr > delta)))
     k = k+1;
     x = x_0 - f_0/df(x_0);
     Dr = abs(x - x_0);
     x_0 = x;
     f_0 = f(x_0);
 end
-raiz = x;
+
+if k>k_max
+    fprintf("Número máximo de iterações alcançado!");
+else
+    raiz = x;
+end
+
 end

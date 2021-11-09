@@ -1,4 +1,4 @@
-function [raiz, counter] = ms211pontofixo(epsilon)
+function [raiz, counter] = pontofixo(epsilon)
 
 % Função que calcula, pelo método do ponto fixo, uma aproximação para o zero de uma dada função.
 % Entrada: função phi e aproximação inicial x_0

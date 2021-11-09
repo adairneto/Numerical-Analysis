@@ -16,7 +16,7 @@ f_m = epsilon + 1;
 counter = 0;
 
 % while (counter < 14)
-while (abs(f_m) > epsilon && abs(b-a) > epsilon)
+while (abs(f_m) > epsilon || abs(b-a) > epsilon)
     counter = counter + 1;
     m = (a*f_b - b*f_a)/(f_b - f_a);
     f_m = f(m);

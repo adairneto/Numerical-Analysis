@@ -21,7 +21,7 @@ if abs(f_0) < epsilon
 elseif (abs(f_1) < epsilon || abs(x_1-x_0) < epsilon)
     raiz = x_1;
 else
-    while (abs(f_1) >= epsilon && (abs(error) >= epsilon))
+    while (abs(f_1) >= epsilon || (abs(error) >= epsilon))
         counter = counter + 1;
         x = (x_0 * f_1 - x_1 * f_0)/(f_1 - f_0);
         error = abs(x - x_1);
