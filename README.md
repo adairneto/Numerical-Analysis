@@ -1,4 +1,4 @@
-# Numerical-Analysis
+# Numerical-Methods
 
 These codes are being developed as a part of my Numerical Methods course. 
 They will cover:
