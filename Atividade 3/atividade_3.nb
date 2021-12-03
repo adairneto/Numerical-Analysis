@@ -1,0 +1,8 @@
+p1 = Plot3D[Sqrt[4 - x^2 - y^2], {x, -3, 3}, {y, -3, 3}, 
+  ColorFunction -> Function[{x, y}, ColorData["NeonColors"][y]]]
+p2 = Plot3D[Sqrt[(2/9)*(9 - y^2 - (9/2)*x^2)], {x, -3, 3}, {y, -3, 3},
+   ColorFunction -> Function[{x, y}, ColorData["LightTerrain"][y]]]
+p3 = Plot3D[
+  Sqrt[10/7]*Sin[(Pi/2)*(y - Sqrt[18/7] + 1)], {x, -3, 3}, {y, -3, 3},
+   ColorFunction -> Function[{x, y}, ColorData["GrayTones"][x]]]
+Show[p1, p2, p3]
